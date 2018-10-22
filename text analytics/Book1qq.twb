@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20182.18.0627.2230                               -->
+<workbook original-version='18.1' source-build='2018.2.0 (20182.18.0627.2230)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='RapidMiner Data (method22)' inline='true' name='federated.0pxg2wp0t5sw8o13b9ap30imjrrt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='method22' name='excel-direct.0esuiet1wxuttg17dqv6p0hqafnf'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/text/method22.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0esuiet1wxuttg17dqv6p0hqafnf' name='RapidMiner Data' table='[&apos;RapidMiner Data$&apos;]' type='table'>
+          <columns gridOrigin='A1:P4:no:A1:P4:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='real' name='Coke' ordinal='1' />
+            <column datatype='real' name='Pepsi' ordinal='2' />
+            <column datatype='real' name='Sprite' ordinal='3' />
+            <column datatype='real' name='Nuka Cola' ordinal='4' />
+            <column datatype='real' name='7up' ordinal='5' />
+            <column datatype='real' name='Budweiser' ordinal='6' />
+            <column datatype='real' name='Kingfisher' ordinal='7' />
+            <column datatype='real' name='Soda' ordinal='8' />
+            <column datatype='real' name='Lemonade' ordinal='9' />
+            <column datatype='real' name='Mountain dew' ordinal='10' />
+            <column datatype='real' name='Red Bull' ordinal='11' />
+            <column datatype='real' name='Dr Pepper' ordinal='12' />
+            <column datatype='real' name='Fanta' ordinal='13' />
+            <column datatype='real' name='Mirinda' ordinal='14' />
+            <column datatype='real' name='bisleri' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Coke</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Coke]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>Coke</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pepsi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pepsi]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>Pepsi</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sprite</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sprite]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>Sprite</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nuka Cola</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Nuka Cola]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>Nuka Cola</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>7up</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[7up]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>7up</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Budweiser</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Budweiser]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>Budweiser</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kingfisher</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Kingfisher]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>Kingfisher</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Soda</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Soda]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>Soda</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lemonade</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lemonade]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>Lemonade</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mountain dew</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mountain dew]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>Mountain dew</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Red Bull</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Red Bull]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>Red Bull</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dr Pepper</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dr Pepper]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>Dr Pepper</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fanta</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fanta]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>Fanta</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mirinda</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mirinda]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>Mirinda</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bisleri</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bisleri]</local-name>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias>bisleri</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[RapidMiner Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P4:no:A1:P4:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='7Up' datatype='real' name='[7up]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+      <column caption='Bisleri' datatype='real' name='[bisleri]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.232143' measure-ordering='alphabetic' measure-percentage='0.767857' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='RapidMiner Data (method22)' name='federated.0pxg2wp0t5sw8o13b9ap30imjrrt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pxg2wp0t5sw8o13b9ap30imjrrt'>
+            <column caption='7Up' datatype='real' name='[7up]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Budweiser]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Coke]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Dr Pepper]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Fanta]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Kingfisher]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Lemonade]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Mirinda]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Mountain dew]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Nuka Cola]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Pepsi]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Red Bull]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Soda]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sprite]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column caption='Bisleri' datatype='real' name='[bisleri]' role='measure' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[7up]' derivation='Sum' name='[sum:7up:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Budweiser]' derivation='Sum' name='[sum:Budweiser:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Coke]' derivation='Sum' name='[sum:Coke:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dr Pepper]' derivation='Sum' name='[sum:Dr Pepper:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fanta]' derivation='Sum' name='[sum:Fanta:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Kingfisher]' derivation='Sum' name='[sum:Kingfisher:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Lemonade]' derivation='Sum' name='[sum:Lemonade:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mirinda]' derivation='Sum' name='[sum:Mirinda:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mountain dew]' derivation='Sum' name='[sum:Mountain dew:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Nuka Cola]' derivation='Sum' name='[sum:Nuka Cola:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pepsi]' derivation='Sum' name='[sum:Pepsi:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Red Bull]' derivation='Sum' name='[sum:Red Bull:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Soda]' derivation='Sum' name='[sum:Soda:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sprite]' derivation='Sum' name='[sum:Sprite:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[bisleri]' derivation='Sum' name='[sum:bisleri:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:7up:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:bisleri:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:Budweiser:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:Coke:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:Dr Pepper:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:Fanta:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:Kingfisher:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:Lemonade:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:Mirinda:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:Mountain dew:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:Nuka Cola:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:Pepsi:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:Red Bull:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:Soda:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[sum:Sprite:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[:Measure Names]' value='309' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[:Measure Names]' value='24' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[Multiple Values]</rows>
+        <cols>([federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[none:Year:ok] / [federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[:Measure Names])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[:Measure Names]</field>
+            <field>[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[none:Year:ok]</field>
+            <field>[federated.0pxg2wp0t5sw8o13b9ap30imjrrt].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      EEteLMcAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
