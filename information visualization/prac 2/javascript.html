@@ -1,0 +1,57 @@
+<html>
+<head>
+<script src="https://d3js.org/d3.v4.min.js" charset="utf-8" ></script>
+</head>
+   <body>
+<svg width="2500" height="2500" style="background:aliceblue">
+</svg>
+
+<script type="text/javascript">
+var svg = d3.select("svg");
+
+	
+
+for (var i=0; i<10;i++)
+{
+
+svg.append("circle")
+	.attr("cx",50+(50*i))
+	.attr("cy",50+(50*i))	
+	.attr("r",50)
+	.attr("fill-opacity",0.6)
+	.attr("fill","green");
+	if((i%2)==0)
+{
+svg.append("circle")
+	.attr("cx",50+(50*i))
+	.attr("cy",600+(50*i))	
+	.attr("r",50)
+	.attr("fill-opacity",0.6)
+	.attr("fill","red");
+}else{
+svg.append("circle")
+	.attr("cx",50+(50*i))
+	.attr("cy",600+(50*i))	
+	.attr("r",50)
+	.attr("fill-opacity",0.6)
+	.attr("fill","black");
+}
+}
+
+svg.append("rect")
+	.attr("x",600)
+	.attr("y",200)
+	.attr("width",400)
+	.attr("height",300)
+	.style("fill","blue");
+
+for(i=0;i<12;i++)
+{
+
+svg.append("polygon").attr("points", "0,0.9511, 1.0,0.95111, 1.309,0,  1.618,0.9511, 2.618,0.9511, 1.809,1.5388, 2.118,2.4899, 1.309,1.9021, 0.5,2.4899, 0.809,1.5388")
+.attr("transform", ` rotate(${30*i} ,800 ,350) translate(870, 350) scale(8)`)
+.style("fill", "yellow");
+}
+      </script>
+       </body>
+</html>
