@@ -6,4 +6,6 @@ Information visualization->Requires a  simple server to access the data from loc
 
 data mining-> reports generated in simple xls files by rapidminer processing. The xml files refer to the processes that result in the xls.pdfs are the reports of these results.
 
+machine learning->arff files analysed in weka. Reports available as pdfs.
+
 
