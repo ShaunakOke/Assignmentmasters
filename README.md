@@ -4,7 +4,7 @@ Text analytics-> Refer to python files for the code sections. The rest is report
 
 Information visualization->Requires a  simple server to access the data from local files to render d3 graphs/transitions
 
-data mining-> reports generated in simple xls files by rapidminer processing. The xml files refer to the processes that result in the xls.pdfs are the reports of these results.
+data mining->.xls files refer to the rapidminer processes.pdfs are reports.
 
 machine learning->arff files analysed in weka. Reports available as pdfs.
 
