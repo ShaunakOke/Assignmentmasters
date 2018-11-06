@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.0.003">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="9.0.003" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="retrieve" compatibility="9.0.003" expanded="true" height="68" name="Retrieve MarkB" width="90" x="112" y="85">
+        <parameter key="repository_entry" value="//Local Repository/data/MarkB"/>
+      </operator>
+      <operator activated="true" class="set_role" compatibility="9.0.003" expanded="true" height="82" name="Set Role" width="90" x="246" y="85">
+        <parameter key="attribute_name" value="Final Exam"/>
+        <parameter key="target_role" value="prediction"/>
+        <list key="set_additional_roles">
+          <parameter key="Final Exam" value="label"/>
+        </list>
+      </operator>
+      <operator activated="true" class="polynomial_regression" compatibility="9.0.003" expanded="true" height="82" name="Polynomial Regression" width="90" x="380" y="85">
+        <parameter key="max_iterations" value="5000"/>
+        <parameter key="replication_factor" value="1"/>
+        <parameter key="max_degree" value="5"/>
+        <parameter key="min_coefficient" value="-100.0"/>
+        <parameter key="max_coefficient" value="100.0"/>
+        <parameter key="use_local_random_seed" value="true"/>
+        <parameter key="local_random_seed" value="1992"/>
+      </operator>
+      <connect from_op="Retrieve MarkB" from_port="output" to_op="Set Role" to_port="example set input"/>
+      <connect from_op="Set Role" from_port="example set output" to_op="Polynomial Regression" to_port="training set"/>
+      <connect from_op="Polynomial Regression" from_port="model" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+    </process>
+  </operator>
+</process>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.0.003">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="9.0.003" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="retrieve" compatibility="9.0.003" expanded="true" height="68" name="Retrieve MarkA" width="90" x="112" y="34">
+        <parameter key="repository_entry" value="//Local Repository/data/MarkA"/>
+      </operator>
+      <operator activated="true" class="set_role" compatibility="9.0.003" expanded="true" height="82" name="Set Role" width="90" x="246" y="34">
+        <parameter key="attribute_name" value="Final Exam"/>
+        <parameter key="target_role" value="prediction"/>
+        <list key="set_additional_roles">
+          <parameter key="Final Exam" value="label"/>
+        </list>
+      </operator>
+      <operator activated="true" class="weka:W-SimpleLinearRegression" compatibility="7.3.000" expanded="true" height="82" name="W-SimpleLinearRegression" width="90" x="447" y="34">
+        <parameter key="D" value="false"/>
+      </operator>
+      <connect from_op="Retrieve MarkA" from_port="output" to_op="Set Role" to_port="example set input"/>
+      <connect from_op="Set Role" from_port="example set output" to_op="W-SimpleLinearRegression" to_port="training set"/>
+      <connect from_op="W-SimpleLinearRegression" from_port="exampleSet" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+    </process>
+  </operator>
+</process>
